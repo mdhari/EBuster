@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBusterMVCWebApp.Tests", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBusterWcfRestService", "EBusterWcfRestService\EBusterWcfRestService.csproj", "{53C49E8C-5E71-40F0-B4FF-C76BE9FDBAF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBusterMVC3WebApp", "EBusterMVC3WebApp\EBusterMVC3WebApp.csproj", "{278B42DD-CCB8-41D6-88FE-85C51E226527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBusterMVC3WebApp.Tests", "EBusterMVC3WebApp.Tests\EBusterMVC3WebApp.Tests.csproj", "{1A24BD0E-F135-4BCF-8491-45097E5C16CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,14 @@ Global
 		{53C49E8C-5E71-40F0-B4FF-C76BE9FDBAF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53C49E8C-5E71-40F0-B4FF-C76BE9FDBAF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53C49E8C-5E71-40F0-B4FF-C76BE9FDBAF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278B42DD-CCB8-41D6-88FE-85C51E226527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278B42DD-CCB8-41D6-88FE-85C51E226527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278B42DD-CCB8-41D6-88FE-85C51E226527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278B42DD-CCB8-41D6-88FE-85C51E226527}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A24BD0E-F135-4BCF-8491-45097E5C16CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A24BD0E-F135-4BCF-8491-45097E5C16CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A24BD0E-F135-4BCF-8491-45097E5C16CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A24BD0E-F135-4BCF-8491-45097E5C16CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

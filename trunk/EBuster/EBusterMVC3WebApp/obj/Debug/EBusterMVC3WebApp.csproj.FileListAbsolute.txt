@@ -1,0 +1,7 @@
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp\bin\EBusterMVC3WebApp.dll
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp\bin\EBusterMVC3WebApp.pdb
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp\bin\EntityFramework.dll
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp\bin\EntityFramework.xml
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp\obj\Debug\EBusterMVC3WebApp.dll
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp\obj\Debug\EBusterMVC3WebApp.pdb

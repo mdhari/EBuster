@@ -1,0 +1,8 @@
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp.Tests\bin\Debug\EBusterMVC3WebApp.Tests.dll.config
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp.Tests\bin\Debug\EBusterMVC3WebApp.Tests.dll
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp.Tests\bin\Debug\EBusterMVC3WebApp.Tests.pdb
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp.Tests\bin\Debug\EBusterMVC3WebApp.dll
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp.Tests\bin\Debug\EBusterMVC3WebApp.pdb
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp.Tests\obj\Debug\EBusterMVC3WebApp.Tests.dll
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVC3WebApp.Tests\obj\Debug\EBusterMVC3WebApp.Tests.pdb
