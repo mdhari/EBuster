@@ -1,0 +1,5 @@
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterWcfAuthRESTService\bin\EBusterWcfAuthRESTService.dll
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterWcfAuthRESTService\bin\EBusterWcfAuthRESTService.pdb
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterWcfAuthRESTService\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterWcfAuthRESTService\obj\Debug\EBusterWcfAuthRESTService.dll
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterWcfAuthRESTService\obj\Debug\EBusterWcfAuthRESTService.pdb

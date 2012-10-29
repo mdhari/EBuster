@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="EBusterWcfAuthRESTService.Global" Language="C#" %>
