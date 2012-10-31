@@ -1,5 +1,0 @@
-C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVCWebApp\bin\EBusterMVCWebApp.dll
-C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVCWebApp\bin\EBusterMVCWebApp.pdb
-C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVCWebApp\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVCWebApp\obj\Debug\EBusterMVCWebApp.dll
-C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\EBusterMVCWebApp\obj\Debug\EBusterMVCWebApp.pdb

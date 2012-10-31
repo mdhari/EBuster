@@ -6,9 +6,48 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.Security;
 using EBusterMVC3WebApp.Models;
+using System.Collections.Specialized;
+using System.Net;
+using System.IO;
+using System.Web.Script.Serialization;
 
 namespace EBusterMVC3WebApp.Controllers
 {
+    public static class Http
+    {
+        public static String Post(String uri, String data)
+        {
+            String response = null;
+            using (WebClient client = new WebClient())
+            {
+                response = client.UploadString(uri, data);
+                //response = client.UploadValues(uri, pairs);
+            }
+            return response;
+        }
+
+        public static string HttpPost(string url, string Parameters)
+        {
+            var req = System.Net.WebRequest.Create(url);
+
+            req.ContentType = "application/json";
+            req.Method = "POST";
+
+            byte[] bytes = System.Text.Encoding.ASCII.GetBytes(Parameters);
+            req.ContentLength = bytes.Length;
+            System.IO.Stream os = req.GetRequestStream();
+            os.Write(bytes, 0, bytes.Length);
+            os.Close();
+            System.Net.WebResponse resp = req.GetResponse();
+            if (resp == null)
+                return null;
+            var sr = new StreamReader(resp.GetResponseStream());
+            return sr.ReadToEnd().Trim();
+        }
+    }
+
+
+
     public class AccountController : Controller
     {
 
@@ -28,18 +67,21 @@ namespace EBusterMVC3WebApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (Membership.ValidateUser(model.UserName, model.Password))
+                var json = new JavaScriptSerializer().Serialize(model);
+                //if (Membership.ValidateUser(model.Email, model.Password))
+                if(Http.HttpPost("http://localhost:8080/Auth/Validate", json.ToString()).Equals("\"ok\""))
                 {
-                    FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
-                    if (Url.IsLocalUrl(returnUrl) && returnUrl.Length > 1 && returnUrl.StartsWith("/")
-                        && !returnUrl.StartsWith("//") && !returnUrl.StartsWith("/\\"))
-                    {
-                        return Redirect(returnUrl);
-                    }
-                    else
-                    {
-                        return RedirectToAction("Index", "Home");
-                    }
+                    return RedirectToAction("Index", "Home");
+                    //FormsAuthentication.SetAuthCookie(model.Email, model.RememberMe);
+                    //if (Url.IsLocalUrl(returnUrl) && returnUrl.Length > 1 && returnUrl.StartsWith("/")
+                    //    && !returnUrl.StartsWith("//") && !returnUrl.StartsWith("/\\"))
+                    //{
+                    //    return Redirect(returnUrl);
+                    //}
+                    //else
+                    //{
+                    //    return RedirectToAction("Index", "Home");
+                    //}
                 }
                 else
                 {
@@ -77,18 +119,28 @@ namespace EBusterMVC3WebApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Attempt to register the user
-                MembershipCreateStatus createStatus;
-                Membership.CreateUser(model.UserName, model.Password, model.Email, null, null, true, null, out createStatus);
 
-                if (createStatus == MembershipCreateStatus.Success)
+                // Attempt to register the user
+                //MembershipCreateStatus createStatus;
+                
+                var json = new JavaScriptSerializer().Serialize(model);
+
+               
+                //Membership.CreateUser(model.UserName, model.Password, model.Email, null, null, true, null, out createStatus);
+                //int createStatus = System.Convert.ToInt32(Http.HttpPost("http://localhost:8080/Auth", "{\"Email\":\"2147483647\",\"Password\":\"String content\"}"));
+                int createStatus = System.Convert.ToInt32(Http.HttpPost("http://localhost:8080/Auth/Register", json.ToString()));
+
+                if (createStatus == 0)
                 {
-                    FormsAuthentication.SetAuthCookie(model.UserName, false /* createPersistentCookie */);
+                    //FormsAuthentication.SetAuthCookie(model.UserName, false /* createPersistentCookie */);
                     return RedirectToAction("Index", "Home");
+                }else if(createStatus == 7)
+                {
+                    ModelState.AddModelError("", ErrorCodeToString(MembershipCreateStatus.DuplicateEmail));
                 }
                 else
                 {
-                    ModelState.AddModelError("", ErrorCodeToString(createStatus));
+                ModelState.AddModelError("", ErrorCodeToString(new MembershipCreateStatus()));
                 }
             }
 

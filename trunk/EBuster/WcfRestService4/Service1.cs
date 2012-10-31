@@ -4,13 +4,9 @@ using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
-using System.Web.Security;
 using System.Text;
-using EBusterWcfRestService.Models;
-using System.Web;
-using System.IO;
 
-namespace EBusterWcfRestService
+namespace WcfRestService4
 {
     // Start the service and browse to http://<machine_name>:<port>/Service1/help to view the service's generated help page
     // NOTE: By default, a new instance of the service is created for each call; change the InstanceContextMode to Single if you want
@@ -19,59 +15,22 @@ namespace EBusterWcfRestService
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
     // NOTE: If the service is renamed, remember to update the global.asax.cs file
-    public class Auth
+    public class Service1
     {
         // TODO: Implement the collection resource that will contain the SampleItem instances
-        UserAccountDBContext userAcctDBContext = new UserAccountDBContext();
 
         [WebGet(UriTemplate = "")]
         public List<SampleItem> GetCollection()
         {
             // TODO: Replace the current implementation to return a collection of SampleItem instances
-            //accountDBContext.Accounts.Add(new Account("michaeldhari@gmail.edu", "test1234"));
-            //accountDBContext.SaveChanges();
             return new List<SampleItem>() { new SampleItem() { Id = 1, StringValue = "Hello" } };
         }
 
-        [WebInvoke(UriTemplate = "/Validate", Method = "POST")]
-        public string ValidateUser(UserAccountModel acct)
+        [WebInvoke(UriTemplate = "", Method = "POST")]
+        public List<SampleItem> Create(SampleItem instance)
         {
-            System.Console.WriteLine("Account with Email:" + acct.Email + "and Password" + acct.Password);
-            // attempt to add the account to the database
-            UserAccount userAcct = userAcctDBContext.UserAccounts.Find(acct.Email);
-            if (userAcct == null)
-            {
-                return "not found";
-            }
-            else if (userAcct.Password == acct.Password)
-            {
-                return "ok";
-            }
-            else
-            {
-                return "wrong password";
-            }
-        }
-
-        [WebInvoke(UriTemplate = "/Register", Method = "POST")]
-        public MembershipCreateStatus CreateUser(UserAccountModel acct)
-        {
-            System.Console.WriteLine("Account with Email:" + acct.Email + "and Password" + acct.Password);
-            // attempt to add the account to the database
-            userAcctDBContext.UserAccounts.Add(new UserAccount(acct.Email, acct.Password));
-
-            try
-            {
-                userAcctDBContext.SaveChanges(); // persist it!
-            }
-            catch (System.Data.Entity.Infrastructure.DbUpdateException ex)
-            {
-                // if its an updateexception, we KNOW the user already exists
-                return MembershipCreateStatus.DuplicateEmail;
-            }
             // TODO: Add the new instance of SampleItem to the collection
-            return MembershipCreateStatus.Success;
-
+            return new List<SampleItem>() { new SampleItem() { Id = 1, StringValue = "Hello" } };
         }
 
         [WebGet(UriTemplate = "{id}")]

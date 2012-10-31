@@ -1,1 +1,0 @@
-<%@ Application Codebehind="Global.asax.cs" Inherits="WCFRestServiceWithKey1.Global" Language="C#" %>

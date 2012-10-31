@@ -1,5 +1,0 @@
-C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\WCFRestServiceWithKey1\bin\WCFRestServiceWithKey1.dll
-C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\WCFRestServiceWithKey1\bin\WCFRestServiceWithKey1.pdb
-C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\WCFRestServiceWithKey1\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\WCFRestServiceWithKey1\obj\Debug\WCFRestServiceWithKey1.dll
-C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\WCFRestServiceWithKey1\obj\Debug\WCFRestServiceWithKey1.pdb

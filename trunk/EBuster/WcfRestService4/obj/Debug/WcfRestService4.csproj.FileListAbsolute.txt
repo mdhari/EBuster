@@ -1,0 +1,5 @@
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\WcfRestService4\bin\WcfRestService4.dll
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\WcfRestService4\bin\WcfRestService4.pdb
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\WcfRestService4\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\WcfRestService4\obj\Debug\WcfRestService4.dll
+C:\Users\Michael\Documents\GitHub\EBuster\trunk\EBuster\WcfRestService4\obj\Debug\WcfRestService4.pdb

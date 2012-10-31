@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBusterWcfAuthRESTService", "EBusterWcfRestService\EBusterWcfAuthRESTService.csproj", "{53C49E8C-5E71-40F0-B4FF-C76BE9FDBAF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBusterWcfRESTService", "EBusterWcfRestService\EBusterWcfRESTService.csproj", "{53C49E8C-5E71-40F0-B4FF-C76BE9FDBAF1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EBusterMVC3WebApp", "EBusterMVC3WebApp\EBusterMVC3WebApp.csproj", "{278B42DD-CCB8-41D6-88FE-85C51E226527}"
 EndProject
